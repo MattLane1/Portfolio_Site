@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master1.master.cs" Inherits="Master1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #4AE8D6;
+        }
+        .auto-style2 {
+            width: 48px;
+        }
+        .auto-style3 {
+            height: 48px;
+        }
+        .auto-style5 {
+            height: 48px;
+            font-family: "Segoe UI", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+            letter-spacing: normal;
+            line-height: 18px;
+            text-align: left;
+            text-indent: 0px;
+            text-transform: none;
+            white-space: normal;
+            word-spacing: 0px;
+            display: inline;
+            float: none;
+            color: rgb(81, 136, 255);
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3" colspan="2">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="About.aspx" Text="About" Value="About"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5" colspan="2" style="orphans: auto; widows: 1; -webkit-text-stroke-width: 0px;">Copyright 2016 Matt Inc.</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
